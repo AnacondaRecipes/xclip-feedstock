@@ -22,8 +22,8 @@ requirements:
     - gettext                       # [unix]
     - libtool                       # [unix]
   host:
-    - xorg-libx11
-    - xorg-libxmu
+    - xorg-libx11 1.8.12
+    - xorg-libxmu 1.2.1
 
 test:
   commands:

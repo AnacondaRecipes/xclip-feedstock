@@ -33,9 +33,18 @@ about:
   home: https://github.com/astrand/xclip
   license: GPL-2.0-or-later
   license_file: COPYING
+  license_family: GPL
   summary: Access X11 clipboards from the command-line
+  description: |
+    xclip is a command line utility that is designed to run on any system with an
+    X11 implementation. It provides an interface to X selections ("the clipboard")
+    from the command line. It can read data from standard in or a file and place it
+    in an X selection for pasting into other X applications. xclip can also print
+    an X selection to standard out, which can then be redirected to a file or
+    another program.
   dev_url: https://github.com/astrand/xclip
+  doc_url: https://github.com/astrand/xclip/blob/master/README
 
 extra:
   recipe-maintainers:
-    - ehfd
+    - viridianmelody

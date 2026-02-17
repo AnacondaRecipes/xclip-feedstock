@@ -9,21 +9,21 @@ source:
   sha256: ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
 
 requirements:
   build:
-    - {{ stdlib('c') }}             # [unix]
-    - {{ compiler('c') }}           # [unix]
-    - make                          # [unix]
-    - autoconf                      # [unix]
-    - automake                      # [unix]
-    - gettext                       # [unix]
-    - libtool                       # [unix]
+    - {{ stdlib('c') }}
+    - {{ compiler('c') }}
+    - make
+    - autoconf
+    - automake
+    - gettext
+    - libtool
   host:
-    - xorg-libx11
-    - xorg-libxmu
+    - xorg-libx11 1.8.12
+    - xorg-libxmu 1.2.1
 
 test:
   commands:
@@ -33,9 +33,18 @@ about:
   home: https://github.com/astrand/xclip
   license: GPL-2.0-or-later
   license_file: COPYING
+  license_family: GPL
   summary: Access X11 clipboards from the command-line
+  description: |
+    xclip is a command line utility that is designed to run on any system with an
+    X11 implementation. It provides an interface to X selections ("the clipboard")
+    from the command line. It can read data from standard in or a file and place it
+    in an X selection for pasting into other X applications. xclip can also print
+    an X selection to standard out, which can then be redirected to a file or
+    another program.
   dev_url: https://github.com/astrand/xclip
+  doc_url: https://github.com/astrand/xclip/blob/master/README
 
 extra:
   recipe-maintainers:
-    - ehfd
+    - viridianmelody

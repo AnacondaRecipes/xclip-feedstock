@@ -14,13 +14,13 @@ build:
 
 requirements:
   build:
-    - {{ stdlib('c') }}             # [unix]
-    - {{ compiler('c') }}           # [unix]
-    - make                          # [unix]
-    - autoconf                      # [unix]
-    - automake                      # [unix]
-    - gettext                       # [unix]
-    - libtool                       # [unix]
+    - {{ stdlib('c') }}
+    - {{ compiler('c') }}
+    - make
+    - autoconf
+    - automake
+    - gettext
+    - libtool
   host:
     - xorg-libx11 1.8.12
     - xorg-libxmu 1.2.1
